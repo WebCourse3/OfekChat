@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+	<title>Socket.IO chat</title>
+	<link rel="stylesheet" type="text/css" href="css/chat.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
+</head>
+<body>
+<ul id="messages"></ul>
+
+<div class="container-fluid navbar-fixed-bottom">
+	<form action="" class="form-horizontal">
+		<div class="form-group">
+			<div class="col-sm-2">
+				<input type="text" class="form-control" id="username" placeholder="Your name" required>
+
+			</div>
+
+			<div class="col-sm-9">
+				<input type="text" class="form-control" id="message" placeholder="Enter your text" autocomplete="off"
+				       required>
+			</div>
+			<div class="col-sm-1">
+				<button class="btn btn-primary pull-right">Send</button>
+			</div>
+		</div>
+	</form>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="js/chat.js"></script>
+
+</body>
+</html>
